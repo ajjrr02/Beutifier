@@ -1,0 +1,355 @@
+<!--
+=========================================================
+* WEB, Code Beautifier - v1.3
+=========================================================
+
+* Coded by AJ|Dev
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Creative Tim">
+    <meta property="og:type" content="website">
+    <title>Javascript-βeautifier</title>
+    <meta name="og:url" content="">
+    <meta name="og:title" content="βeautifier - JS Beautifier">
+    <meta name="description" content="   βeautifier organizes and beauties your CSS - javascript Code and Soon More To come - in a manner that makes it easier to read and define page areas and see how they relate to one another..">
+
+    <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <link href="./assets/css/nucleo/css/nucleo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link type="text/css" href="./assets/css/all_styleneat.css" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171124855-1" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script type="82ae403c7672cb5ab0ad3c84-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-171124855-1');
+    </script>
+    <script data-ad-client="ca-pub-3630600901848124" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+</head>
+
+<body>
+    <Style>
+        .bg-grey {
+            background-color: #eee;
+        }
+    </Style>
+    <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+            <a class="navbar-brand pt-0" href="/">
+<img src="./assets/img/brand/logo.png" class="navbar-brand-img" alt="...">
+</a>
+
+            <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+
+                <div class="navbar-collapse-header d-md-none">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="../index.html">
+<img src="./assets/img/brand/logo.png">
+</a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
+<span></span>
+<span></span>
+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="mt-4 mb-3 d-md-none">
+                    <div class="input-group input-group-rounded input-group-merge">
+                        <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <span class="fa fa-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html">
+<i class="fa fa-code text-blue"></i> Css Beautifier </a>
+                        <a class="nav-link active bg-grey" href="./js-beautifier.html">
+<i class="fab fa-js text-orange"></i> Js Beautifier  </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="header pb-4 pt-4">
+            <div class="container-fluid">
+                <div class="header-body">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-center mb-4">Js Beautifier</h1>
+                            <div class="card card-stats">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="col-12 mt-2 mb-3">
+                                                <div id="editorBox"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-3 mb-3 text-center">
+                                            <div>
+                                                <button class="btn btn-primary mb-2" onclick="if (!window.__cfRLUnblockHandlers) return false; beautifyValue()" data-cf-modified-82ae403c7672cb5ab0ad3c84-="">Beautify</button>
+                                            </div>
+                                            <div class="collapse" id="optionsCollapse">
+                                                <div class="card card-body pull-left">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <input type="number" class="form-control form-control-alternative" name="indent_size">
+                                                                <small class="form-text text-muted">Indentation size</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control form-control-alternative" name="indent_char">
+                                                                <small class="form-text text-muted">Indentation character</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="indent_with_tabs" />
+                                                                </div>
+                                                                <small class="form-text text-muted">Indent with tabs, overrides size and character</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="end_with_newline" />
+                                                                </div>
+                                                                <small class="form-text text-muted">End output with newline</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <input type="number" class="form-control form-control-alternative" name="indent_level">
+                                                                <small class="form-text text-muted">Initial indentation level</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="preserve_newlines" />
+                                                                </div>
+                                                                <small class="form-text text-muted">Preserve line-breaks</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <input type="number" class="form-control form-control-alternative" name="max_preserve_newlines">
+                                                                <small class="form-text text-muted">Number of line-breaks to be preserved in one chunk</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="space_in_paren" />
+                                                                </div>
+                                                                <small class="form-text text-muted">Add padding spaces within paren, ie. f( a, b )</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="space_in_empty_paren" />
+                                                                </div>
+                                                                <small class="form-text text-muted">Add a single space inside empty paren, ie. f( )</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="jslint_happy" />
+                                                                </div>
+                                                                <small class="form-text text-muted">Enable jslint-stricter mode</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="space_after_anon_function" />
+                                                                </div>
+                                                                <small class="form-text text-muted">Add a space before an anonymous function's parens, ie. function ()</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <select class="form-control" name="brace_style">
+<option value="collapse">Braces with control statement</option>
+<option value="expand">Braces on own line</option>
+<option value="end-expand">End braces on own line</option>
+<option value="none">Attempt to keep braces where they are</option>
+</select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="unindent_chained_methods" />
+                                                                </div>
+                                                                <small class="form-text text-muted">Don't indent chained method calls</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="break_chained_methods" />
+                                                                </div>
+                                                                <small class="form-text text-muted">Break chained method calls across subsequent lines</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="keep_array_indentation" />
+                                                                </div>
+                                                                <small class="form-text text-muted">Preserve array indentation</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="unescape-strings" />
+                                                                </div>
+                                                                <small class="form-text text-muted">Decode printable characters encoded in xNN notation</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <input type="number" class="form-control form-control-alternative" name="wrap_line_length">
+                                                                <small class="form-text text-muted">Wrap lines at next opportunity after N characters</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="e4x" />
+                                                                </div>
+                                                                <small class="form-text text-muted">Pass E4X xml literals through untouched</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input class="form-check-input" type="checkbox" name="comma_first" />
+                                                                </div>
+                                                                <small class="form-text text-muted">Put commas at the beginning of new line instead of end</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <select class="form-control" name="operator_position">
+<option value="before-newline">Set operator position before newline</option>
+<option value="after-newline">Set operator position after newline</option>
+<option value="preserve-newline">Set operator position preserve newline</option>
+</select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div class="col-12 mt-2 mb-3">
+                                        <div id="editorBoxView"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2 mb-3 text-center">
+                                    <button class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copy()" data-cf-modified-82ae403c7672cb5ab0ad3c84-="">Copy</button>
+                                    <a id="exportUrl" href="" class="btn btn-warning" download="result.js">Export</a>
+                                </div>
+                                <div class="col-12 mt-2 mb-3 mt-4">
+                                    <div class="col-12">
+                                        <p>
+                                            Welcome to βeautifier, Online JS Beautifier. This page lets you beautify and Edit unformatted Javascript code in real-time. Make your code human readable  by adding proper formatting with our own JS formatting tool. Just Paste your JS code into the field,
+                                            click on Beautify button to start the process. You Can Copy or Export your code into a .js file with our export option.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt--7">
+
+            <footer class="footer">
+                <div class="row align-items-center justify-content-xl-between">
+                    <div class="col-xl-6">
+
+                    </div>
+                    <div class="col-xl-6">
+                        <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+                            <li class="nav-item">
+                                <a href="https://anassjardane.netlify.app" class="nav-link" target="_blank">Dev by AJ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./assets/js/jquery.min.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="./assets/js/argon.min.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="./assets/js/codemirror.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="./assets/js/addon/hint/show-hint.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="./assets/js/addon/hint/xml-hint.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="./assets/js/addon/hint/html-hint.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="./assets/js/mode/javascript/javascript.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="./assets/js/mode/htmlmixed/htmlmixed.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="./assets/js/mode/xml/xml.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="./assets/js/mode/css/css.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="./assets/js/custom.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="./assets/js/customBeautifier.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.11.0/beautify.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.11.0/beautify-css.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.11.0/beautify-html.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.11.0/beautify.min.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.11.0/beautify-css.min.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.11.0/beautify-html.min.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="https://cdn.rawgit.com/beautify-web/js-beautify/v1.11.0/js/lib/beautify.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="https://cdn.rawgit.com/beautify-web/js-beautify/v1.11.0/js/lib/beautify-css.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="https://cdn.rawgit.com/beautify-web/js-beautify/v1.11.0/js/lib/beautify-html.js" type="82ae403c7672cb5ab0ad3c84-text/javascript"></script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="82ae403c7672cb5ab0ad3c84-|49" defer=""></script>
+</body>
+
+</html>
